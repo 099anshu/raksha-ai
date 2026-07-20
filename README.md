@@ -200,5 +200,4 @@ In priority order — each is optional, the prototype fully works without them:
 - **Frontend loads but shows network errors** → make sure the backend terminal is still running,
   and `frontend/.env.local` points at the right URL
 - **"command not found: python3" on Windows** → try `python` instead of `python3`
-- Anything else: paste the exact error message into Claude (in a new chat, or ask your
-  teammate running Claude Code) — it can diagnose almost any error message instantly.
+

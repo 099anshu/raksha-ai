@@ -1,0 +1,19 @@
+# Local development convenience — runs both services with one command.
+# Not required to run the project (you can just use two terminals — see README),
+# but handy once you're comfortable with the basics.
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    ports: ["8000:8000"]
+    env_file: ./backend/.env
+    volumes: ["./backend:/app"]
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    build: ./frontend
+    ports: ["3000:3000"]
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
+    volumes: ["./frontend:/app"]
+    command: npm run dev

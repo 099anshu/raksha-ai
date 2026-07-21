@@ -49,7 +49,7 @@ Each should print a version number, not an error.
 
 ## 2. Get this code into your team's GitHub repo
 
-Your teammate already created: `https://github.com/Jason3105/ET-AI-Hack.git`
+Teammate created repo: `https://github.com/Jason3105/ET-AI-Hack.git`
 
 **If you're the one who has this project folder right now:**
 ```bash
